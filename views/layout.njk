@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+         
+       {% block head %}
+        
+        <title>Phantom Thieves of Hearts</title>
+
+       {% endblock head %}
+
+    </head>
+
+    <body>
+
+     <link rel="stylesheet" href="index.css">
+
+        <header>
+        <div class="links">
+
+        <a href="/about">Quem somos</a>
+        <a href="/works">Nosso histórico</a>
+
+        </div>
+        
+        </header>     
+         
+         
+         {% block content %}{% endblock content %}      
+   
+    </body>
+
+</html>

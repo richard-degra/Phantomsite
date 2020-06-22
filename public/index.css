@@ -1,0 +1,179 @@
+@import url("//db.onlinewebfonts.com/c/d558e285700fb65ce789e5e6a05e5d5d?family=Earwig+Factory");
+
+@font-face {
+    font-family: "Earwig Factory";
+    src: url("//db.onlinewebfonts.com/t/d558e285700fb65ce789e5e6a05e5d5d.eot");
+    src: url("//db.onlinewebfonts.com/t/d558e285700fb65ce789e5e6a05e5d5d.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d558e285700fb65ce789e5e6a05e5d5d.woff2")
+    format("woff2"), url("//db.onlinewebfonts.com/t/d558e285700fb65ce789e5e6a05e5d5d.woff")
+    format("woff"),
+    url("//db.onlinewebfonts.com/t/d558e285700fb65ce789e5e6a05e5d5d.ttf")
+    format("truetype"), url("//db.onlinewebfonts.com/t/d558e285700fb65ce789e5e6a05e5d5d.svg#Earwig Factory")
+    format("svg");
+ } 
+
+:root {
+    --main-color: #000000;
+    --font-color: white;
+    --sec-color: #fe0000;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: var(--main-color);
+    font-family: "Earwig Factory";  
+ }
+
+header {
+    padding: 32px;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: var(--font-color);
+    font-size: 37px;
+    line-height: 47px;
+    margin: 0 16px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.links a:hover {
+    color: var(--sec-color);
+    transition: color 400ms
+}
+
+#wrapper {
+    color:  var(--font-color);
+    padding: 32px;
+    text-align: center;
+}
+
+#wrapper img {
+    border-radius: 25%;
+    border: 5px solid var(--sec-color);
+    margin-bottom: 32px;
+    height: 220px;
+}
+
+#wrapper h1 {
+   font-size: 42px;
+   color: var(--sec-color);
+   line-height: 52px;
+   font-weight: 400;
+}
+
+#wrapper h2 {
+   font-size: 42px;
+   line-height: 52px;
+   font-weight: 400;
+   margin-top: 8px;
+   padding: 20px;
+}
+
+#wrapper p {
+    max-width: 500px;
+    font-size: 42px;
+    margin: 18px auto;
+    line-height: 52px;
+    font-weight: 400;
+ }
+
+#links-footer a {
+    border-bottom: 1px solid var(--font-color);
+}
+
+/* -- CARDS -- */ 
+
+.cards {
+    max-width: 400px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    color: var(--font-color);
+    background-color: var(--main-color);
+}
+
+.card__image-container  {
+    width: 220px;
+}
+
+.card__image-container img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.card__content,
+.card__info {
+    font-size: 30px;
+    padding: 8px;
+}
+
+.card__info {
+    font-size: 30px;
+    display: grid;
+    margin: -20px;
+    padding: 34px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card__place {
+    background-color: var(--main-color);
+    margin-left: 12px;
+    padding: 0;
+    text-align: center;
+}
+
+/* -- MODAL -- */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: var(--sec-color);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+   color: var(--main-color);
+   position: absolute;
+   right: 8px;
+   top: 8px;
+   cursor: pointer;   
+}
+
+/* -- MODAL ACTIVE -- */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
