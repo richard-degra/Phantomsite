@@ -3,7 +3,8 @@ module.exports = [
         id: 'Fqay0vxOcdg',
         title: 'Suguru Kamoshida',
         info: 'Local:',
-        place: 'Shujin Academy'
+        place: 'Shujin Academy',
+        featured: true
     },
     {
         id: '0YHHFtjSmhw',
@@ -15,7 +16,8 @@ module.exports = [
         id: 'OWyDBgUz1UE',
         title: 'Junya Kaneshiro',
         info: 'Local:',
-        place: 'Shibuya'
+        place: 'Shibuya',
+        featured: true
     },
     {
         id: '6qH8gzHDqDw',
@@ -27,7 +29,8 @@ module.exports = [
         id: 'oQai9Du7WaE',
         title: 'Kunikazu Okumura',
         info: 'Local:',
-        place: 'Okumura Foods'
+        place: 'Okumura Foods',
+        featured: true
     },
     {
         id: 'YEKcoLxYpLI',

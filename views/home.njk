@@ -3,18 +3,21 @@
 {% block content %}
 
 <div id="wrapper">
-          <img src="https://vignette.wikia.nocookie.net/megamitensei/images/2/28/Phantom_Thieves_Logo.png/revision/latest/scale-to-width-down/250?cb=20170528120634" alt="logo">
-          <h1>Phantom Thieves of Hearts</h1>
-          <h2>Seja bem vindo</h2>
-          <p>Você pode contratar nossos serviços pelas redes sociais</p>
+          <img src="{{ data.logo_url }}" alt="imagem de {{ data.name }}">
+          <h1> {{ data.name }} </h1>
+          <h2> {{ data.welcome }} </h2>
+          <p> {{ data.description }} </p>
        </div>
 
         
         
        <div id="links-footer" class="links">
-           <a href="https://www.instagram.com/phantomthieves_/" target="_blank">Instagram</a>
-           <a href="https://twitter.com/westealhearts" target="_blank">Twitter</a>
-           <a href="https://pt-br.facebook.com/TeamThiefsOfHearts/" target="_blank">Facebook</a>
+           {% for link in data.links %}
+           
+           <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+
+           {% endfor %}
+
         </div>
 
 
